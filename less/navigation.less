@@ -1,15 +1,7 @@
 // Navigation code here
 
 .nav-header {
-    max-width: 1000px;
-    width: 100%;
-    background-color: #f6f6f6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px;
-    padding-bottom: 12px;
+    .nav-header(@max-width, flex-start, center);
 
     h1 {
         font-size: 4.0rem;
@@ -17,16 +9,13 @@
     }
 
     nav {
-        width: 100%;
+        width: @max-width;
         display: flex;
         justify-content: center;
         margin-top: 20px;
 
         a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.6rem;
-            padding: 0px 1.6%;
+            .nav-a();
         }
     }
 }
