@@ -1,7 +1,14 @@
 // Navigation code here
 
 .nav-header {
-    .nav-header(@max-width, flex-start, center);
+    .nav-header();
+    position: fixed;
+    top: 0;
+    opacity: .8;
+    -webkit-animation-name: test;
+    -webkit-animation-duration: 1000s;
+    animation-name: test;
+    animation-duration: 1000s;
 
     h1 {
         font-size: 4.0rem;
@@ -18,8 +25,26 @@
             .nav-a();
 
             @media @phone {
-                padding: 0px 3.3%;
+                margin: 0px 3.3%;
             }
+        }
+    }
+
+    @-webkit-keyframes test {
+        from {
+            background-color: white;
+        }
+        to {
+            background-color: yellow;
+        }
+    }
+
+    @keyframes test {
+        from {
+            background-color: white;
+        }
+        to {
+            background-color: yellow;
         }
     }
 }
