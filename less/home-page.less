@@ -7,8 +7,11 @@ body {
 .home {
   margin-top: 100px;
   
-  .intro {
+  @media @tablet {
+    width: 90%;
+  }
 
+  .intro {
     h2 {
       padding: 15px;
     }
@@ -69,6 +72,10 @@ body {
     display: flex;
     justify-content: center;
 
+    @media @tablet {
+      padding: 50px 3%;
+    }
+
     @media @phone {
       flex-direction: column-reverse;
       padding: 20px 4%;
@@ -91,6 +98,10 @@ body {
 
       .btn {
         .btn-mixin(black , white);
+
+        @media @tablet {
+          width: 200px;
+        }
 
         @media @phone {
           width: @max-width;

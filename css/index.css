@@ -233,6 +233,11 @@ body {
 .home {
   margin-top: 100px;
 }
+@media (max-width: 800px) {
+  .home {
+    width: 90%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -282,6 +287,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .home .walk {
+    padding: 50px 3%;
+  }
+}
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
@@ -316,6 +326,11 @@ body {
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: black;
+}
+@media (max-width: 800px) {
+  .home .walk .walk-text .btn {
+    width: 200px;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
